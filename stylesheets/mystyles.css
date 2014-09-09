@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+body {
+  background:#fff url('../images/background.png')repeat-x;
+  font: 16px/1.5 'Helvetica', Arial, sans-serif;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+p {
+  font-size: 1em;
+  padding: 0 0 0 1em;
+}
+.panel {
+  overflow: auto;
+  height: 317px;
+  width: 528px;
+  background: white;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.console {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  overflow-y: auto;
+  height: 317px;
+  width: 350px;
+  background: white;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.messagePanel {
+  position: absolute;
+  top: 95px;
+  left: 420px;
+  padding: 15px 15px 15px 15px;
+  background-image: url('../images/messagePanel.png');
+  color: black;
+}
+
+.buttonBar {
+  position: absolute;
+  top: 65px;
+  left: 215px;
+}
+
+.banner {
+  width: 990px;
+  height: 80px;
+  margin: 0 15%;
+}
+
+input['type="button"'] {
+  -webkit-appearance: none;
+}
+
+
+.btn {
+  padding: 0.2em 0.6em;
+  background-color: #ffffff;
+  color: #777;
+  border-radius: 5px;
+  font-size: 0.750em;
+  outline: 0;
+}
+
+.roster {
+  width: 990px;
+  margin: 0 0 0 15%;
+  background: firebrick;
+  color: #f7f7f7;
+  max-width: 990px;
+}

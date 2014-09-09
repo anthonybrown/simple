@@ -1,0 +1,110 @@
+::selection {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f7f7f7;
+  text-shadow: none;
+}
+
+
+html {
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+body {
+  background:#fff url('../images/background.png')repeat-x;
+  font: 16px/1.5 'Helvetica', Arial, sans-serif;
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+p {
+  font-size: 1em;
+  padding: 0 0 0 1em;
+}
+.panel {
+  overflow: auto;
+  height: 317px;
+  width: 528px;
+  background: white;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.console {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  overflow-y: auto;
+  height: 317px;
+  width: 350px;
+  background: white;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.messagePanel {
+  position: absolute;
+  top: 95px;
+  left: 420px;
+  padding: 15px 15px 15px 15px;
+  background-image: url('../images/messagePanel.png');
+  color: black;
+}
+
+.buttonBar {
+  position: absolute;
+  top: 65px;
+  left: 15px;
+}
+
+.banner {
+  width: 990px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+input['type="button"'] {
+  -webkit-appearance: none;
+}
+
+
+#btn {
+  padding: 0.2em 0.6em;
+  background-color: #ffffff;
+  color: #777;
+  border-radius: 5px;
+  font-size: 0.750em;
+  outline: 0;
+}
+.btn {
+  padding: 0.2em 0.6em;
+  background-color: #ffffff;
+  color: #777;
+  border-radius: 5px;
+  font-size: 0.750em;
+  outline: 0;
+}
+
+.roster {
+  padding: 0.5em;
+  background: #f7f7f7;
+  color: #777777;
+  text-shadow: -1px -2px 0 #ffffff;
+  width: 88%;
+  max-width: 800px;
+  min-width: 700px;
+  margin: 0 7% 2em;
+  border-radius: 0.3em;
+}
+
+thead tr th {
+  color: #333;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's Go BlueSox!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href='stylesheets/normalize.css' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/styles.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <img class='banner' src="images/logo_990x80.png" alt='logo' width="990" height="80" />
+    <div class="buttonBar">
+      <!--<button id='btn' class='btn' type='button'>Pitchers</button>
+      <button id='btn2' class='btn' type='button'>infielders</button>-->
+      <input id='btn' class='btn' type="button" value="Pitchers"
+        onclick="changeRoster('pitchers.html')" />
+      <input id='btn2' class='btn' type="button" value="Infielders"
+        onclick="changeRoster('infielders.html')"/>
+    </div>
+    <div id="roster" class="roster">
+      <p>Click on the buttons above to choose a roster above.</p>
+    </div>
+    <script>
+      if (typeof XMLHttpRequest === 'undefined') {
+        XMLHttpRequest = function () {
+          try { return new ActiveXObject('Msxml2.XMLHTTP.6.0'); }
+          catch (e) {}
+          try { return new ActiveXObject('Msxml2.XMLHTTP.3.0'); }
+          catch (e) {}
+          try { return new ActiveXObject('Msxml2.XMLHTTP'); }
+          catch (e) {}
+          throw new Error('This browser doesn\'t support XMLHttpRequest.');
+        }
+      }
+
+      function changeRoster(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, false);
+        xhr.send();
+        var roster = document.getElementById('roster');
+        roster.innerHTML = xhr.responseText;
+      }
+    </script>
+    <!--<script src='js/app.js'></script>-->
+  </body>
+</html>
